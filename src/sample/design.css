@@ -1,0 +1,28 @@
+.poljeIspravno {
+    -fx-control-inner-background: greenyellow;
+    -fx-text-fill: grey;
+}
+.poljeNijeIspravno {
+    -fx-control-inner-background: lightpink;
+    -fx-text-fill: grey;
+
+}
+.poljeNeutralno {
+    -fx-background-color: lightgrey;
+    -fx-text-fill: black;
+
+}
+
+.greyBtn{
+    -fx-background-color: grey;
+}
+
+#labelUzorak{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+#listaPretrage{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}

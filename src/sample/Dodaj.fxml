@@ -10,6 +10,7 @@
 <?import javafx.geometry.Insets?>
 <?import java.net.URL?>
 <GridPane fx:id="gridTwo" hgap="5" vgap="5" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Dodaj">
+    <stylesheets> <URL value="@design.css" /> </stylesheets>
     <rowConstraints>
         <RowConstraints />
         <RowConstraints />
@@ -28,7 +29,7 @@
     <Label text="Adresa" styleClass="labeleObavjestenja" GridPane.columnIndex="0" GridPane.rowIndex="2" />
     <Label text="Grad" styleClass="labeleObavjestenja" GridPane.columnIndex="0" GridPane.rowIndex="3" />
     <Label text="Postanski broj" styleClass="labeleObavjestenja" GridPane.columnIndex="0" GridPane.rowIndex="4" />
-    <Button fx:id="btnPosalji" styleClass="greyBtn" text="Posalji" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+    <Button fx:id="btnPosalji" styleClass="greyBtn" text="Posalji" onAction="#pritisniPosalji" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
     <TextField fx:id="imePolje" styleClass="poljeNeutralno" GridPane.columnIndex="1" GridPane.rowIndex="0" />
     <TextField fx:id="prezimePolje" styleClass="poljeNeutralno" GridPane.columnIndex="1" GridPane.rowIndex="1" />
     <TextField fx:id="adresaPolje" styleClass="poljeNeutralno" GridPane.columnIndex="1" GridPane.rowIndex="2" />
