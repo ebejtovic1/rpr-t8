@@ -10,7 +10,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import java.net.URL?>
-<GridPane fx:id="gridOne" alignment="center" hgap="5" vgap="5"  xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane fx:id="gridOne" alignment="center" hgap="5" vgap="5" onKeyPressed="#enter" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <columnConstraints>
         <ColumnConstraints />
         <ColumnConstraints />
@@ -27,10 +27,10 @@
     <TextField fx:id="textBoxPretraga" GridPane.columnIndex="1" GridPane.rowIndex="0">
     </TextField>
 
-    <Button fx:id="dugmeTrazi" styleClass="greyBtn" text="Trazi" GridPane.columnIndex="2" GridPane.rowIndex="0">
+    <Button fx:id="dugmeTrazi" styleClass="greyBtn" onAction="#trazi" text="Trazi" GridPane.columnIndex="2" GridPane.rowIndex="0">
     </Button>
 
-    <Button fx:id="dugmePrekini" styleClass="greyBtn" text="Prekini" GridPane.rowIndex="0" GridPane.columnIndex="3">
+    <Button fx:id="dugmePrekini" styleClass="greyBtn" onAction="#prekini" text="Prekini" GridPane.rowIndex="0" GridPane.columnIndex="3">
     </Button>
 
     <ListView fx:id="listaPretrage"  GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="1">
