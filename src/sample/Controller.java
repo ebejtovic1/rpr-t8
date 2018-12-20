@@ -35,7 +35,27 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         dugmePrekini.setDisable(true);
-       
+         listaPretrage.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+
+            public void changed(
+                    ObservableValue<? extends String> observable,
+                    String oldValue, String newValue) {
+                if (newValue != null) {
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Dodaj.fxml"));
+                    Parent root = null;
+                    try {
+                        root = loader.load();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    Stage secondaryStage = new Stage();
+                    secondaryStage.setTitle("Posiljka");
+                    secondaryStage.setScene(new Scene(root, Region.USE_COMPUTED_SIZE, Region.USE_COMPUTED_SIZE));
+                    secondaryStage.initModality(Modality.APPLICATION_MODAL);
+                    secondaryStage.show();
+                }
+            }
+        });
 
     }
 
