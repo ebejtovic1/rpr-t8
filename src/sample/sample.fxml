@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<GridPane fx:id="gridOne" alignment="center" hgap="5" vgap="5"  xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <Label fx:id="labelUzorak" text="Uzorak" GridPane.columnIndex="0" GridPane.rowIndex="0">
+    </Label>
+
+    <TextField fx:id="textBoxPretraga" GridPane.columnIndex="1" GridPane.rowIndex="0">
+    </TextField>
+
+    <Button fx:id="dugmeTrazi" styleClass="greyBtn" text="Trazi" GridPane.columnIndex="2" GridPane.rowIndex="0">
+    </Button>
+
+    <Button fx:id="dugmePrekini" styleClass="greyBtn" text="Prekini" GridPane.rowIndex="0" GridPane.columnIndex="3">
+    </Button>
+
+    <ListView fx:id="listaPretrage"  GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="1">
+    </ListView>
+
+    <padding>
+        <Insets bottom="5" left="5" right="5" top="5" />
+    </padding>
+
+</GridPane>
