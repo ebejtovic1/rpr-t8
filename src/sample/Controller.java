@@ -70,7 +70,7 @@ public class Controller implements Initializable {
         @Override
         public void run() {
             String textName = textBoxPretraga.getText();
-            prikaz( new File( "/Users/User/Desktop" ) , textName );
+            prikaz( new File( "/Users/User" ) , textName );
         }
     }
     public void prikaz(File path , String name){
@@ -95,7 +95,7 @@ public class Controller implements Initializable {
                 } );
             }
         }
-        if( path.getAbsolutePath().equals( "/Users/User/Desktop" ) ){
+        if( path.getAbsolutePath().equals( "/Users/User" ) ){
             dugmeTrazi.setDisable(false);
             dugmePrekini.setDisable(true);
         }

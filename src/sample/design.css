@@ -17,12 +17,6 @@
     -fx-background-color: grey;
 }
 
-#labelUzorak{
-    -fx-background-color: black;
-    -fx-text-fill: white;
-}
-
-#listaPretrage{
-    -fx-background-color: black;
-    -fx-text-fill: white;
+#gridOne{
+    -fx-background-color: Cornsilk;
 }
